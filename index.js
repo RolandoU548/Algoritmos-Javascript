@@ -21,3 +21,8 @@ function esPalindromo(n) {
   reverseN = n.split("").reverse().join("");
   return n == reverseN;
 }
+
+function MCD(a, b) {
+  if (!b) return a;
+  return MCD(b, a % b);
+}
